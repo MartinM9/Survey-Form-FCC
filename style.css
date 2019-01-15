@@ -1,0 +1,113 @@
+body {
+    background-color: #edc7b7;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size: 4em;
+    color: #24130c;
+}
+
+.container {
+    margin: 40px 20%;
+    padding: 40px 80px;
+    background-color: #eee2dc;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+.col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+  }
+
+.row {
+    margin: 40px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.container .description {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.survey-form {
+    text-align: center;
+}
+
+
+.survey-form #name, #email, #number{
+    width: 200px;
+    margin: 0 20px;
+    padding: 5px;
+}
+
+#textarea {
+    margin: 0 20px;
+    padding: 5px;
+}
+
+.submit {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background: #ac3b61;;
+    color: #eee2dc;
+    font-size: 1.5em;
+    margin-top: 60px;
+}
+
+footer p {
+    color: #0f0f0f;
+    text-align: end;
+    margin-top: 70px;
+}
+
+.link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media (max-width: 960px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      h1 {
+          font-size: 3em;
+      }
+
+      .container {
+          margin: 40px 8%;
+          padding: 20px 35px;
+      }
+
+      .survey-form #name, #email, #number{
+        width: 150px;
+        margin: 0 20px;
+        padding: 5px;
+    }
+
+    #textarea {
+        width: 150px;
+    }
+
+    .submit {
+        padding: 7px 12px;
+    }
+}

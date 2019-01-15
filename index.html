@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <section>
+        <div class="container">
+            <p id="description" class="description">Our short survey. Help us get better!</p>
+            <form action="" id="survey-form" class="survey-form">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name" id="name-label" class="name">Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email" id="email-label">Email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="number" id="number-label">Age:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" min="18" max="99" name="number" id="number" required placeholder="Age">
+                    </div>
+                </div>
+                <div class="row" class="radiobox">
+                    <div class="col-25">
+                        <label for="radiobox">Which option do you like more?</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" name="radiobox" value="option-a" checked> Option A
+                        <input type="radio" name="radiobox" value="option-b"> Option B
+                        <input type="radio" name="radiobox" value="option-c"> Option C
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dropdown">Choose from dropdown:</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="dropdown" id="dropdown">
+                            <option value="abc">Abc</option>
+                            <option value="def">Def</option>
+                            <option value="ghi">Ghi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-25">
+                            <label for="checkbox" class="checkbox">Which option do you like more?</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" name="checkbox" value="option-a"> Option A
+                            <input type="checkbox" name="checkbox" value="option-b"> Option B
+                            <input type="checkbox" name="checkbox" value="option-c"> Option C
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="textarea" class="comment">Write a comment:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="textarea" id="textarea" cols="30" rows="8"></textarea>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" class="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Project is done for <a class="link" href="https://learn.freecodecamp.org/" target="_blank">freeCoddeCamp</a></p>
+    </footer>
+</body>
+</html>
